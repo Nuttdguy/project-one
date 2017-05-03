@@ -1,6 +1,5 @@
 package com.ca.week2.tues;
 
-import com.ca.week2.tues.Student;
 import static com.ca.week2.tues.Student.StudentBuilder;
 
 public class Main {
@@ -19,14 +18,15 @@ public class Main {
 									
 		System.out.println(
 								   student1.getFirstName() 
-						+ " " + student1.getLastName() 
-						+ " " + student1.getAge()
-						+ " " + student1.getGender()
-						+ " " + student1.getStreet()
-						+ " " + student1.getCity()
-						+ " " + student1.getState()
-						+ " " + student1.getZip());
+						+ "  || " + student1.getLastName() 
+						+ "  || " + student1.getAge()
+						+ "  || " + student1.getGender()
+						+ ", " + student1.getStreet()
+						+ ", " + student1.getCity()
+						+ ", " + student1.getState()
+						+ ", " + student1.getZip());
 		
+		System.out.println(student1);
 	}
 
 }

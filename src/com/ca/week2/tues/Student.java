@@ -25,7 +25,7 @@ public class Student {
 		this.age = builder.age;
 		this.isScienceMajor = builder.isScienceMajor;
 		this.gender = builder.gender;
-		this.address = new Address();
+		this.address = builder.address;
 		this.address.setStreet(builder.address.getStreet());
 		this.address.setCity(builder.address.getCity());
 		this.address.setState(builder.address.getState());
@@ -141,6 +141,13 @@ public class Student {
 	public int getZip() {
 		return this.address.getZip();
 	}
+
+	@Override
+	public String toString() {
+		return firstName + " - " + lastName + " - " + age + " - " + isScienceMajor + " - " + gender 
+				+ " - " + address.getState() + " - " + address.getCity() + " - " + address.getStreet();
+	}
+	
 	
 	
 }
