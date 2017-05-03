@@ -8,6 +8,7 @@ public class Record {
 	private String city;
 	private String state;
 	private String number;
+	private String zip;
 	
 	//==||  Constructor  ||==||
 	public Record() {
@@ -21,6 +22,7 @@ public class Record {
 		this.city = builder.city;
 		this.state = builder.state;
 		this.number = builder.number;
+		this.zip = builder.zip;
 	}
 	
 	//==||  Builder  ||==||
@@ -32,6 +34,8 @@ public class Record {
 		private String city;
 		private String state;
 		private String number;
+		private String zip;
+		
 		
 		protected RecordBuilder() {
 			
@@ -69,6 +73,11 @@ public class Record {
 		
 		protected RecordBuilder addNumber(String number) {
 			this.number = number;
+			return this;
+		}
+		
+		protected RecordBuilder addZip(String zip) {
+			this.zip = zip;
 			return this;
 		}
 		
@@ -127,6 +136,14 @@ public class Record {
 
 	public void setNumber(String number) {
 		this.number = number;
+	}
+
+	public String getZip() {
+		return zip;
+	}
+
+	public void setZip(String zip) {
+		this.zip = zip;
 	}
 	
 }

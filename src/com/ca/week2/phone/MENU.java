@@ -8,7 +8,11 @@ public enum MENU {
 	ADD_LAST_NAME("Add last name: "),
 	ADD_CITY("Add city: "),
 	ADD_STATE("Add state: "),
-	ADD_NUMBER("Add number: ");
+	ADD_NUMBER("Add number: "),
+	ADD_ZIP("Add zip: "),
+	UPDATE_RECORD("Update record: "),
+	DELETE_RECORD("Delete record: "),
+	EXIT_PROGRAM("Exit: ");
 	
 	private String selection;
 	
@@ -16,7 +20,7 @@ public enum MENU {
 		this.selection = selection;
 	}
 	
-	public String getMenuParam() {
+	public String getString() {
 		return this.selection;
 	}
 	

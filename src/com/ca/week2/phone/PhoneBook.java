@@ -3,7 +3,7 @@ package com.ca.week2.phone;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Phone {
+public class PhoneBook {
 
 	enum SEARCHPARAM {
 		FIRSTNAME, LASTNAME, FULLNAME, NUMBER, CITY, STATE
@@ -14,7 +14,7 @@ public class Phone {
 	
 	
 	//==|| Constructors  ||==||
-	public Phone() {
+	public PhoneBook() {
 		this.recordList = new ArrayList<>();
 	}
 	
