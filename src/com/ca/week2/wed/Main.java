@@ -33,6 +33,8 @@ public class Main {
 		//  3. Checkout book(s)
 		//  4. Add Branch
 		Library library1 = new Library();
+		
+		List<Integer> checkSize = new ArrayList<>();
 		library1.setCustomers(csList);
 		library1.setBranches(branch1);
 		library1.setBooks(bkList);
@@ -52,7 +54,7 @@ public class Main {
 		c1.setBooksOut(book1);
 		c1.setBooksOut(book2);
 		System.out.println("\nThe customer is:\n" + c1.printCustomerDetails() + "\n\nChecked out books:" + c1.printBooksOut() );
-		
+			
 	}
 
 }

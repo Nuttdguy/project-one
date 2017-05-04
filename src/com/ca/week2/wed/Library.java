@@ -10,7 +10,6 @@ public class Library {
 	private Branch branch;
 	private List<Customer> customers;
 	
-
 	public Library() {
 		this.books = new ArrayList<>();
 		this.customers = new ArrayList<>();
