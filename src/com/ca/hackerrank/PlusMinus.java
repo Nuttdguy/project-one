@@ -33,9 +33,9 @@ public class PlusMinus {
         
         for (int i = 0; i < nums.length; i++ ) {
             if (nums[i] > 0) {
-                posSum += nums[i];
+                posSum++;
             } else if (nums[i] < 0) {
-                negSum -= nums[i];
+                negSum++;
             } else {
                 zeroSum++;
             }
