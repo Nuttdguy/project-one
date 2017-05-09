@@ -145,5 +145,11 @@ public class Record {
 	public void setZip(String zip) {
 		this.zip = zip;
 	}
+
+	@Override
+	public String toString() {
+		return firstName + " - " + lastName + " - " + middleName + " - " + city + " - " + state + " - " + number + " - "
+				+ zip;
+	}
 	
 }

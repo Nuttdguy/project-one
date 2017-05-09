@@ -55,6 +55,13 @@ public class Main {
 		c1.setBooksOut(book2);
 		System.out.println("\nThe customer is:\n" + c1.printCustomerDetails() + "\n\nChecked out books:" + c1.printBooksOut() );
 			
+		//====||  THURSDAY REQUIREMENT  ||====\\
+		//  Add single record Customer Object to CustomerProfile Object
+		library1.addCustomerProfile(c1);
+		
+		//  Add single record Book Object to BookLog Object
+		library1.addToBookLog(book1);
+		
 	}
 
 }

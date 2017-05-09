@@ -9,10 +9,12 @@ public class Library {
 	private List<Book> books;
 	private Branch branch;
 	private List<Customer> customers;
+	private CustomerProfile[] customerProfile;
 	
 	public Library() {
 		this.books = new ArrayList<>();
 		this.customers = new ArrayList<>();
+		this.customerProfile = new CustomerProfile[1];
 	}
 	
 	// return the total amount of books in Library
@@ -47,6 +49,26 @@ public class Library {
 			flag = false;  // Create BookCheckedOut Exception
 		}
 		return flag;
+	}
+	
+	public boolean addCustomerProfile(Customer profile) {
+		//  Create a new Array with +1 size to add new record
+		customerProfile = new CustomerProfile[1];
+		CustomerProfile[] profileArr = new CustomerProfile[customerProfile.length + 2];
+		//  Copy the old array
+		profileArr = customerProfile.clone();
+		
+		CustomerProfile cp = new CustomerProfile();
+		profileArr[customerProfile.length - 1] = cp.addCustomer(profile);
+		this.customerProfile = profileArr;
+		System.out.println(customerProfile[customerProfile.length-1].toString());
+		return true;
+	}
+	
+	public boolean addToBookLog(Book book) {
+		customerProfile[0].addBookToLog(book);
+		System.out.println(customerProfile.toString());
+		return true;
 	}
 	
 	

@@ -48,7 +48,7 @@ public class PhoneBook {
 		List<Record> queryList = new ArrayList<>();
 		
 		for (Record record : recordList) {
-			if ( record.equals(query) ) {
+			if ( record.toString().contains(query) ) {
 				queryList.add(record);
 			} 
 		}
