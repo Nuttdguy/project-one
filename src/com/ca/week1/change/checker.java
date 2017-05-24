@@ -58,15 +58,15 @@ public class checker {
 		// int changeCopy = (int)(change * 100);
 		int changeCopy = (int)change;
 		
-		if (changeCopy % 25 != 0) {
+		if (changeCopy % 25 != 0 || changeCopy > 0) {
 			changePart[0] = (int)(changeCopy / 25);
 			changeCopy -= (int)changePart[0] * 25;
 		} 
-		if (changeCopy % 10 != 0) {
+		if (changeCopy % 10 != 0 || changeCopy / 10 > 0) {
 			changePart[1] = (int)(changeCopy / 10);
 			changeCopy -= (int)changePart[1] * 10;
 		}
-		if (changeCopy % 05 != 0) {
+		if (changeCopy % 05 != 0 || changeCopy / 5 > 0) {
 			changePart[2] = (int)(changeCopy / 05);
 			changeCopy -= (int)changePart[2] * 05;
 		}
