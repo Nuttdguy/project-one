@@ -55,7 +55,8 @@ public class checker {
 
 	public static int[] calculateChange(double change) {
 		int[] changePart = {0,0,0,0};
-		int changeCopy = (int)(change * 100);
+		// int changeCopy = (int)(change * 100);
+		int changeCopy = (int)change;
 		
 		if (changeCopy % 25 != 0) {
 			changePart[0] = (int)(changeCopy / 25);
