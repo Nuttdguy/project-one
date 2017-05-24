@@ -50,8 +50,6 @@ public class Main {
 		Record entry = null;
 		
 		
-		// TODO STATIC BUG, RECORDS ARE REFERENCING SAME OBJECT, VALUES UPDATING ALL 
-		
 		System.out.println(MESSAGE.DISPLAYOPTION.getMessage());
 		
 		while(run) {
@@ -198,9 +196,12 @@ public class Main {
 		System.out.println("Enter a parameter to search for?");
 		String searchParam = getValueIntoClassField();
 		List<Record> result = phone.findRecordBy(searchParam);
+		int count = 0;
 		for (Record r : result) {
-			System.out.println("\n" + r + "\n");
+			count++;
+			System.out.println( count + ": " + r);
 		}
+		System.out.println();
 		
 	}
 	
